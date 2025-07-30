@@ -1,0 +1,6 @@
+MODULE.bazel.lock
+bazel-testlogs
+bazel-playground
+bazel-out
+bazel-bin
+.ijwb/

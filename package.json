@@ -1,0 +1,7 @@
+{
+  "name": "npm-extract-debug",
+  "version": "1.0.0",
+  "dependencies": {
+    "yaml": "2.5.0"
+  }
+}
