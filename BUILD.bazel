@@ -3,7 +3,56 @@ load("@npm//:defs.bzl", "npm_link_all_packages")
 npm_link_all_packages(name = "node_modules")
 
 filegroup(
-    name = "test_extract",
+    name = "test_extract_yaml",
     srcs = [":node_modules/yaml"],
     visibility = ["//visibility:public"],
 )
+
+filegroup(name = "test_extract_lodash", srcs = [":node_modules/lodash"])
+filegroup(name = "test_extract_types", srcs = [":node_modules/@types/node"])
+filegroup(name = "test_extract_react", srcs = [":node_modules/react"])
+filegroup(
+  name = "test_extract_react_native",
+  srcs = [":node_modules/react-native"],
+  visibility = ["//visibility:public"],
+)
+filegroup(
+  name = "test_extract_metro",
+  srcs = [":node_modules/metro"],
+  visibility = ["//visibility:public"],
+)
+
+filegroup(
+  name = "test_extract_babel_runtime",
+  srcs = [":node_modules/@babel/runtime"],
+  visibility = ["//visibility:public"],
+)
+
+filegroup(
+  name = "test_extract_markdown_it",
+  srcs = [":node_modules/markdown-it"],  # Markdown parser with many small utility files
+  visibility = ["//visibility:public"],
+)
+
+filegroup(
+  name = "all_extracts",
+  srcs = [
+      ":test_extract_yaml",
+      ":test_extract_lodash",
+      ":test_extract_types",
+      ":test_extract_react_native",
+      ":test_extract_react",
+      ":test_extract_metro",
+      ":test_extract_babel_runtime",
+      ":test_extract_markdown_it",
+  ],
+  visibility = ["//visibility:public"],
+)
+
+genrule(
+  name = "count_all_files",
+  srcs = [":all_extracts"],
+  outs = ["total_file_count.txt"],
+  cmd = "echo 'Total files across all extracts:' > $@ && find $(SRCS) -type f | wc -l >> $@",
+)
+

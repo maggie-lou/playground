@@ -4,3 +4,4 @@ bazel-playground
 bazel-out
 bazel-bin
 .ijwb/
+node_modules/
