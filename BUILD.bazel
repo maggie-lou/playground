@@ -21,18 +21,226 @@ filegroup(
   srcs = [":node_modules/metro"],
   visibility = ["//visibility:public"],
 )
-
 filegroup(
   name = "test_extract_babel_runtime",
   srcs = [":node_modules/@babel/runtime"],
   visibility = ["//visibility:public"],
 )
-
 filegroup(
   name = "test_extract_markdown_it",
-  srcs = [":node_modules/markdown-it"],  # Markdown parser with many small utility files
+  srcs = [":node_modules/markdown-it"],
   visibility = ["//visibility:public"],
 )
+
+# Successfully installed packages (219 total)
+filegroup(name = "test_extract_express", srcs = [":node_modules/express"])
+filegroup(name = "test_extract_axios", srcs = [":node_modules/axios"])
+filegroup(name = "test_extract_moment", srcs = [":node_modules/moment"])
+filegroup(name = "test_extract_underscore", srcs = [":node_modules/underscore"])
+filegroup(name = "test_extract_chalk", srcs = [":node_modules/chalk"])
+filegroup(name = "test_extract_debug", srcs = [":node_modules/debug"])
+filegroup(name = "test_extract_uuid", srcs = [":node_modules/uuid"])
+filegroup(name = "test_extract_fs_extra", srcs = [":node_modules/fs-extra"])
+filegroup(name = "test_extract_minimist", srcs = [":node_modules/minimist"])
+filegroup(name = "test_extract_commander", srcs = [":node_modules/commander"])
+filegroup(name = "test_extract_semver", srcs = [":node_modules/semver"])
+filegroup(name = "test_extract_glob", srcs = [":node_modules/glob"])
+filegroup(name = "test_extract_rimraf", srcs = [":node_modules/rimraf"])
+filegroup(name = "test_extract_mkdirp", srcs = [":node_modules/mkdirp"])
+filegroup(name = "test_extract_yargs", srcs = [":node_modules/yargs"])
+filegroup(name = "test_extract_inquirer", srcs = [":node_modules/inquirer"])
+filegroup(name = "test_extract_ora", srcs = [":node_modules/ora"])
+filegroup(name = "test_extract_boxen", srcs = [":node_modules/boxen"])
+filegroup(name = "test_extract_kleur", srcs = [":node_modules/kleur"])
+filegroup(name = "test_extract_picocolors", srcs = [":node_modules/picocolors"])
+filegroup(name = "test_extract_ansi_colors", srcs = [":node_modules/ansi-colors"])
+filegroup(name = "test_extract_strip_ansi", srcs = [":node_modules/strip-ansi"])
+filegroup(name = "test_extract_wrap_ansi", srcs = [":node_modules/wrap-ansi"])
+filegroup(name = "test_extract_string_width", srcs = [":node_modules/string-width"])
+filegroup(name = "test_extract_cliui", srcs = [":node_modules/cliui"])
+filegroup(name = "test_extract_table", srcs = [":node_modules/table"])
+filegroup(name = "test_extract_cli_table3", srcs = [":node_modules/cli-table3"])
+filegroup(name = "test_extract_blessed", srcs = [":node_modules/blessed"])
+filegroup(name = "test_extract_figlet", srcs = [":node_modules/figlet"])
+filegroup(name = "test_extract_gradient_string", srcs = [":node_modules/gradient-string"])
+filegroup(name = "test_extract_node_fetch", srcs = [":node_modules/node-fetch"])
+filegroup(name = "test_extract_got", srcs = [":node_modules/got"])
+filegroup(name = "test_extract_superagent", srcs = [":node_modules/superagent"])
+filegroup(name = "test_extract_needle", srcs = [":node_modules/needle"])
+filegroup(name = "test_extract_isomorphic_fetch", srcs = [":node_modules/isomorphic-fetch"])
+filegroup(name = "test_extract_cross_fetch", srcs = [":node_modules/cross-fetch"])
+filegroup(name = "test_extract_whatwg_fetch", srcs = [":node_modules/whatwg-fetch"])
+filegroup(name = "test_extract_node_html_parser", srcs = [":node_modules/node-html-parser"])
+filegroup(name = "test_extract_jsdom", srcs = [":node_modules/jsdom"])
+filegroup(name = "test_extract_cheerio", srcs = [":node_modules/cheerio"])
+filegroup(name = "test_extract_puppeteer", srcs = [":node_modules/puppeteer"])
+filegroup(name = "test_extract_playwright", srcs = [":node_modules/playwright"])
+filegroup(name = "test_extract_selenium_webdriver", srcs = [":node_modules/selenium-webdriver"])
+filegroup(name = "test_extract_webdriverio", srcs = [":node_modules/webdriverio"])
+filegroup(name = "test_extract_cypress", srcs = [":node_modules/cypress"])
+filegroup(name = "test_extract_jest", srcs = [":node_modules/jest"])
+filegroup(name = "test_extract_mocha", srcs = [":node_modules/mocha"])
+filegroup(name = "test_extract_chai", srcs = [":node_modules/chai"])
+filegroup(name = "test_extract_sinon", srcs = [":node_modules/sinon"])
+filegroup(name = "test_extract_supertest", srcs = [":node_modules/supertest"])
+filegroup(name = "test_extract_nock", srcs = [":node_modules/nock"])
+filegroup(name = "test_extract_msw", srcs = [":node_modules/msw"])
+filegroup(name = "test_extract_vitest", srcs = [":node_modules/vitest"])
+filegroup(name = "test_extract_ava", srcs = [":node_modules/ava"])
+filegroup(name = "test_extract_tap", srcs = [":node_modules/tap"])
+filegroup(name = "test_extract_tape", srcs = [":node_modules/tape"])
+filegroup(name = "test_extract_qunit", srcs = [":node_modules/qunit"])
+filegroup(name = "test_extract_jasmine", srcs = [":node_modules/jasmine"])
+filegroup(name = "test_extract_karma", srcs = [":node_modules/karma"])
+filegroup(name = "test_extract_protractor", srcs = [":node_modules/protractor"])
+filegroup(name = "test_extract_nightwatch", srcs = [":node_modules/nightwatch"])
+filegroup(name = "test_extract_cucumber", srcs = [":node_modules/@cucumber/cucumber"])
+filegroup(name = "test_extract_codeceptjs", srcs = [":node_modules/codeceptjs"])
+filegroup(name = "test_extract_detox", srcs = [":node_modules/detox"])
+filegroup(name = "test_extract_appium", srcs = [":node_modules/appium"])
+filegroup(name = "test_extract_testcafe", srcs = [":node_modules/testcafe"])
+filegroup(name = "test_extract_zombie", srcs = [":node_modules/zombie"])
+filegroup(name = "test_extract_phantom", srcs = [":node_modules/phantomjs-prebuilt"])
+filegroup(name = "test_extract_eslint", srcs = [":node_modules/eslint"])
+filegroup(name = "test_extract_prettier", srcs = [":node_modules/prettier"])
+filegroup(name = "test_extract_stylelint", srcs = [":node_modules/stylelint"])
+filegroup(name = "test_extract_jshint", srcs = [":node_modules/jshint"])
+filegroup(name = "test_extract_jslint", srcs = [":node_modules/jslint"])
+filegroup(name = "test_extract_standard", srcs = [":node_modules/standard"])
+filegroup(name = "test_extract_xo", srcs = [":node_modules/xo"])
+filegroup(name = "test_extract_tslint", srcs = [":node_modules/tslint"])
+filegroup(name = "test_extract_typescript", srcs = [":node_modules/typescript"])
+filegroup(name = "test_extract_ts_node", srcs = [":node_modules/ts-node"])
+filegroup(name = "test_extract_tsx", srcs = [":node_modules/tsx"])
+filegroup(name = "test_extract_esbuild", srcs = [":node_modules/esbuild"])
+filegroup(name = "test_extract_vite", srcs = [":node_modules/vite"])
+filegroup(name = "test_extract_webpack", srcs = [":node_modules/webpack"])
+filegroup(name = "test_extract_rollup", srcs = [":node_modules/rollup"])
+filegroup(name = "test_extract_parcel", srcs = [":node_modules/parcel"])
+filegroup(name = "test_extract_browserify", srcs = [":node_modules/browserify"])
+filegroup(name = "test_extract_gulp", srcs = [":node_modules/gulp"])
+filegroup(name = "test_extract_turbo", srcs = [":node_modules/turbo"])
+filegroup(name = "test_extract_lerna", srcs = [":node_modules/lerna"])
+filegroup(name = "test_extract_nx", srcs = [":node_modules/nx"])
+filegroup(name = "test_extract_rush", srcs = [":node_modules/@microsoft/rush"])
+filegroup(name = "test_extract_yarn", srcs = [":node_modules/yarn"])
+filegroup(name = "test_extract_pnpm", srcs = [":node_modules/pnpm"])
+filegroup(name = "test_extract_npm", srcs = [":node_modules/npm"])
+filegroup(name = "test_extract_babel_core", srcs = [":node_modules/@babel/core"])
+filegroup(name = "test_extract_babel_preset_env", srcs = [":node_modules/@babel/preset-env"])
+filegroup(name = "test_extract_babel_preset_react", srcs = [":node_modules/@babel/preset-react"])
+filegroup(name = "test_extract_babel_preset_typescript", srcs = [":node_modules/@babel/preset-typescript"])
+filegroup(name = "test_extract_babel_plugin_transform_runtime", srcs = [":node_modules/@babel/plugin-transform-runtime"])
+filegroup(name = "test_extract_babel_loader", srcs = [":node_modules/babel-loader"])
+filegroup(name = "test_extract_ts_loader", srcs = [":node_modules/ts-loader"])
+filegroup(name = "test_extract_css_loader", srcs = [":node_modules/css-loader"])
+filegroup(name = "test_extract_style_loader", srcs = [":node_modules/style-loader"])
+filegroup(name = "test_extract_file_loader", srcs = [":node_modules/file-loader"])
+filegroup(name = "test_extract_url_loader", srcs = [":node_modules/url-loader"])
+filegroup(name = "test_extract_html_loader", srcs = [":node_modules/html-loader"])
+filegroup(name = "test_extract_json_loader", srcs = [":node_modules/json-loader"])
+filegroup(name = "test_extract_raw_loader", srcs = [":node_modules/raw-loader"])
+filegroup(name = "test_extract_svg_loader", srcs = [":node_modules/svg-loader"])
+filegroup(name = "test_extract_image_webpack_loader", srcs = [":node_modules/image-webpack-loader"])
+filegroup(name = "test_extract_mini_css_extract_plugin", srcs = [":node_modules/mini-css-extract-plugin"])
+filegroup(name = "test_extract_html_webpack_plugin", srcs = [":node_modules/html-webpack-plugin"])
+filegroup(name = "test_extract_copy_webpack_plugin", srcs = [":node_modules/copy-webpack-plugin"])
+filegroup(name = "test_extract_clean_webpack_plugin", srcs = [":node_modules/clean-webpack-plugin"])
+filegroup(name = "test_extract_webpack_dev_server", srcs = [":node_modules/webpack-dev-server"])
+filegroup(name = "test_extract_webpack_bundle_analyzer", srcs = [":node_modules/webpack-bundle-analyzer"])
+filegroup(name = "test_extract_compression_webpack_plugin", srcs = [":node_modules/compression-webpack-plugin"])
+filegroup(name = "test_extract_terser_webpack_plugin", srcs = [":node_modules/terser-webpack-plugin"])
+filegroup(name = "test_extract_optimize_css_assets_webpack_plugin", srcs = [":node_modules/optimize-css-assets-webpack-plugin"])
+filegroup(name = "test_extract_express_generator", srcs = [":node_modules/express-generator"])
+filegroup(name = "test_extract_koa", srcs = [":node_modules/koa"])
+filegroup(name = "test_extract_fastify", srcs = [":node_modules/fastify"])
+filegroup(name = "test_extract_hapi", srcs = [":node_modules/@hapi/hapi"])
+filegroup(name = "test_extract_restify", srcs = [":node_modules/restify"])
+filegroup(name = "test_extract_socket_io", srcs = [":node_modules/socket.io"])
+filegroup(name = "test_extract_ws", srcs = [":node_modules/ws"])
+filegroup(name = "test_extract_engine_io", srcs = [":node_modules/engine.io"])
+filegroup(name = "test_extract_sockjs", srcs = [":node_modules/sockjs"])
+filegroup(name = "test_extract_faye_websocket", srcs = [":node_modules/faye-websocket"])
+filegroup(name = "test_extract_graphql", srcs = [":node_modules/graphql"])
+filegroup(name = "test_extract_apollo_server_express", srcs = [":node_modules/@apollo/server"])
+filegroup(name = "test_extract_relay_runtime", srcs = [":node_modules/relay-runtime"])
+filegroup(name = "test_extract_urql", srcs = [":node_modules/urql"])
+filegroup(name = "test_extract_apollo_client_new", srcs = [":node_modules/@apollo/client"])
+filegroup(name = "test_extract_graphql_request", srcs = [":node_modules/graphql-request"])
+filegroup(name = "test_extract_dataloader", srcs = [":node_modules/dataloader"])
+filegroup(name = "test_extract_graphql_tools", srcs = [":node_modules/graphql-tools"])
+filegroup(name = "test_extract_prisma", srcs = [":node_modules/prisma"])
+filegroup(name = "test_extract_mongoose", srcs = [":node_modules/mongoose"])
+filegroup(name = "test_extract_sequelize", srcs = [":node_modules/sequelize"])
+filegroup(name = "test_extract_typeorm", srcs = [":node_modules/typeorm"])
+filegroup(name = "test_extract_knex", srcs = [":node_modules/knex"])
+filegroup(name = "test_extract_massive", srcs = [":node_modules/massive"])
+filegroup(name = "test_extract_pg", srcs = [":node_modules/pg"])
+filegroup(name = "test_extract_mysql2", srcs = [":node_modules/mysql2"])
+filegroup(name = "test_extract_sqlite3", srcs = [":node_modules/sqlite3"])
+filegroup(name = "test_extract_redis", srcs = [":node_modules/redis"])
+filegroup(name = "test_extract_ioredis", srcs = [":node_modules/ioredis"])
+filegroup(name = "test_extract_mongodb", srcs = [":node_modules/mongodb"])
+filegroup(name = "test_extract_cassandra_driver", srcs = [":node_modules/cassandra-driver"])
+filegroup(name = "test_extract_neo4j_driver", srcs = [":node_modules/neo4j-driver"])
+filegroup(name = "test_extract_elastic_elasticsearch", srcs = [":node_modules/@elastic/elasticsearch"])
+filegroup(name = "test_extract_memcached", srcs = [":node_modules/memcached"])
+filegroup(name = "test_extract_node_cache", srcs = [":node_modules/node-cache"])
+filegroup(name = "test_extract_lru_cache", srcs = [":node_modules/lru-cache"])
+filegroup(name = "test_extract_memory_cache", srcs = [":node_modules/memory-cache"])
+filegroup(name = "test_extract_flat_cache", srcs = [":node_modules/flat-cache"])
+filegroup(name = "test_extract_node_localstorage", srcs = [":node_modules/node-localstorage"])
+filegroup(name = "test_extract_localforage", srcs = [":node_modules/localforage"])
+filegroup(name = "test_extract_dexie", srcs = [":node_modules/dexie"])
+filegroup(name = "test_extract_lowdb", srcs = [":node_modules/lowdb"])
+filegroup(name = "test_extract_nedb", srcs = [":node_modules/nedb"])
+filegroup(name = "test_extract_level", srcs = [":node_modules/level"])
+filegroup(name = "test_extract_leveldown", srcs = [":node_modules/leveldown"])
+filegroup(name = "test_extract_levelup", srcs = [":node_modules/levelup"])
+filegroup(name = "test_extract_aws_sdk", srcs = [":node_modules/aws-sdk"])
+filegroup(name = "test_extract_aws_sdk_client_s3", srcs = [":node_modules/@aws-sdk/client-s3"])
+filegroup(name = "test_extract_aws_sdk_client_dynamodb", srcs = [":node_modules/@aws-sdk/client-dynamodb"])
+filegroup(name = "test_extract_aws_sdk_client_lambda", srcs = [":node_modules/@aws-sdk/client-lambda"])
+filegroup(name = "test_extract_aws_sdk_client_ec2", srcs = [":node_modules/@aws-sdk/client-ec2"])
+filegroup(name = "test_extract_aws_sdk_client_rds", srcs = [":node_modules/@aws-sdk/client-rds"])
+filegroup(name = "test_extract_aws_sdk_client_sns", srcs = [":node_modules/@aws-sdk/client-sns"])
+filegroup(name = "test_extract_aws_sdk_client_sqs", srcs = [":node_modules/@aws-sdk/client-sqs"])
+filegroup(name = "test_extract_aws_sdk_client_ses", srcs = [":node_modules/@aws-sdk/client-ses"])
+filegroup(name = "test_extract_aws_sdk_client_cloudformation", srcs = [":node_modules/@aws-sdk/client-cloudformation"])
+filegroup(name = "test_extract_aws_sdk_client_cloudwatch", srcs = [":node_modules/@aws-sdk/client-cloudwatch"])
+filegroup(name = "test_extract_google_cloud_storage", srcs = [":node_modules/@google-cloud/storage"])
+filegroup(name = "test_extract_google_cloud_pubsub", srcs = [":node_modules/@google-cloud/pubsub"])
+filegroup(name = "test_extract_google_cloud_firestore", srcs = [":node_modules/@google-cloud/firestore"])
+filegroup(name = "test_extract_google_cloud_bigquery", srcs = [":node_modules/@google-cloud/bigquery"])
+filegroup(name = "test_extract_google_cloud_functions_framework", srcs = [":node_modules/@google-cloud/functions-framework"])
+filegroup(name = "test_extract_firebase_admin", srcs = [":node_modules/firebase-admin"])
+filegroup(name = "test_extract_firebase", srcs = [":node_modules/firebase"])
+filegroup(name = "test_extract_azure_storage_blob", srcs = [":node_modules/@azure/storage-blob"])
+filegroup(name = "test_extract_azure_cosmos", srcs = [":node_modules/@azure/cosmos"])
+filegroup(name = "test_extract_azure_service_bus", srcs = [":node_modules/@azure/service-bus"])
+filegroup(name = "test_extract_azure_functions", srcs = [":node_modules/@azure/functions"])
+filegroup(name = "test_extract_azure_identity", srcs = [":node_modules/@azure/identity"])
+filegroup(name = "test_extract_stripe", srcs = [":node_modules/stripe"])
+filegroup(name = "test_extract_paypal_rest_sdk", srcs = [":node_modules/@paypal/paypal-server-sdk"])
+filegroup(name = "test_extract_braintree", srcs = [":node_modules/braintree"])
+filegroup(name = "test_extract_square", srcs = [":node_modules/square"])
+filegroup(name = "test_extract_razorpay", srcs = [":node_modules/razorpay"])
+filegroup(name = "test_extract_twilio", srcs = [":node_modules/twilio"])
+filegroup(name = "test_extract_sendgrid", srcs = [":node_modules/@sendgrid/mail"])
+filegroup(name = "test_extract_mailgun_js", srcs = [":node_modules/mailgun.js"])
+filegroup(name = "test_extract_nodemailer", srcs = [":node_modules/nodemailer"])
+filegroup(name = "test_extract_email_templates", srcs = [":node_modules/email-templates"])
+filegroup(name = "test_extract_mjml", srcs = [":node_modules/mjml"])
+filegroup(name = "test_extract_juice", srcs = [":node_modules/juice"])
+filegroup(name = "test_extract_handlebars", srcs = [":node_modules/handlebars"])
+filegroup(name = "test_extract_mustache", srcs = [":node_modules/mustache"])
+filegroup(name = "test_extract_ejs", srcs = [":node_modules/ejs"])
+filegroup(name = "test_extract_pug", srcs = [":node_modules/pug"])
+filegroup(name = "test_extract_nunjucks", srcs = [":node_modules/nunjucks"])
+filegroup(name = "test_extract_twig", srcs = [":node_modules/twig"])
+filegroup(name = "test_extract_dot", srcs = [":node_modules/dot"])
+filegroup(name = "test_extract_dustjs_linkedin", srcs = [":node_modules/dustjs-linkedin"])
+filegroup(name = "test_extract_eta", srcs = [":node_modules/eta"])
 
 filegroup(
   name = "all_extracts",
@@ -45,6 +253,214 @@ filegroup(
       ":test_extract_metro",
       ":test_extract_babel_runtime",
       ":test_extract_markdown_it",
+      ":test_extract_express",
+      ":test_extract_axios",
+      ":test_extract_moment",
+      ":test_extract_underscore",
+      ":test_extract_chalk",
+      ":test_extract_debug",
+      ":test_extract_uuid",
+      ":test_extract_fs_extra",
+      ":test_extract_minimist",
+      ":test_extract_commander",
+      ":test_extract_semver",
+      ":test_extract_glob",
+      ":test_extract_rimraf",
+      ":test_extract_mkdirp",
+      ":test_extract_yargs",
+      ":test_extract_inquirer",
+      ":test_extract_ora",
+      ":test_extract_boxen",
+      ":test_extract_kleur",
+      ":test_extract_picocolors",
+      ":test_extract_ansi_colors",
+      ":test_extract_strip_ansi",
+      ":test_extract_wrap_ansi",
+      ":test_extract_string_width",
+      ":test_extract_cliui",
+      ":test_extract_table",
+      ":test_extract_cli_table3",
+      ":test_extract_blessed",
+      ":test_extract_figlet",
+      ":test_extract_gradient_string",
+      ":test_extract_node_fetch",
+      ":test_extract_got",
+      ":test_extract_superagent",
+      ":test_extract_needle",
+      ":test_extract_isomorphic_fetch",
+      ":test_extract_cross_fetch",
+      ":test_extract_whatwg_fetch",
+      ":test_extract_node_html_parser",
+      ":test_extract_jsdom",
+      ":test_extract_cheerio",
+      ":test_extract_puppeteer",
+      ":test_extract_playwright",
+      ":test_extract_selenium_webdriver",
+      ":test_extract_webdriverio",
+      ":test_extract_cypress",
+      ":test_extract_jest",
+      ":test_extract_mocha",
+      ":test_extract_chai",
+      ":test_extract_sinon",
+      ":test_extract_supertest",
+      ":test_extract_nock",
+      ":test_extract_msw",
+      ":test_extract_vitest",
+      ":test_extract_ava",
+      ":test_extract_tap",
+      ":test_extract_tape",
+      ":test_extract_qunit",
+      ":test_extract_jasmine",
+      ":test_extract_karma",
+      ":test_extract_protractor",
+      ":test_extract_nightwatch",
+      ":test_extract_cucumber",
+      ":test_extract_codeceptjs",
+      ":test_extract_detox",
+      ":test_extract_appium",
+      ":test_extract_testcafe",
+      ":test_extract_zombie",
+      ":test_extract_phantom",
+      ":test_extract_eslint",
+      ":test_extract_prettier",
+      ":test_extract_stylelint",
+      ":test_extract_jshint",
+      ":test_extract_jslint",
+      ":test_extract_standard",
+      ":test_extract_xo",
+      ":test_extract_tslint",
+      ":test_extract_typescript",
+      ":test_extract_ts_node",
+      ":test_extract_tsx",
+      ":test_extract_esbuild",
+      ":test_extract_vite",
+      ":test_extract_webpack",
+      ":test_extract_rollup",
+      ":test_extract_parcel",
+      ":test_extract_browserify",
+      ":test_extract_gulp",
+      ":test_extract_turbo",
+      ":test_extract_lerna",
+      ":test_extract_nx",
+      ":test_extract_rush",
+      ":test_extract_yarn",
+      ":test_extract_pnpm",
+      ":test_extract_npm",
+      ":test_extract_babel_core",
+      ":test_extract_babel_preset_env",
+      ":test_extract_babel_preset_react",
+      ":test_extract_babel_preset_typescript",
+      ":test_extract_babel_plugin_transform_runtime",
+      ":test_extract_babel_loader",
+      ":test_extract_ts_loader",
+      ":test_extract_css_loader",
+      ":test_extract_style_loader",
+      ":test_extract_file_loader",
+      ":test_extract_url_loader",
+      ":test_extract_html_loader",
+      ":test_extract_json_loader",
+      ":test_extract_raw_loader",
+      ":test_extract_svg_loader",
+      ":test_extract_image_webpack_loader",
+      ":test_extract_mini_css_extract_plugin",
+      ":test_extract_html_webpack_plugin",
+      ":test_extract_copy_webpack_plugin",
+      ":test_extract_clean_webpack_plugin",
+      ":test_extract_webpack_dev_server",
+      ":test_extract_webpack_bundle_analyzer",
+      ":test_extract_compression_webpack_plugin",
+      ":test_extract_terser_webpack_plugin",
+      ":test_extract_optimize_css_assets_webpack_plugin",
+      ":test_extract_express_generator",
+      ":test_extract_koa",
+      ":test_extract_fastify",
+      ":test_extract_hapi",
+      ":test_extract_restify",
+      ":test_extract_socket_io",
+      ":test_extract_ws",
+      ":test_extract_engine_io",
+      ":test_extract_sockjs",
+      ":test_extract_faye_websocket",
+      ":test_extract_graphql",
+      ":test_extract_apollo_server_express",
+      ":test_extract_relay_runtime",
+      ":test_extract_urql",
+      ":test_extract_apollo_client_new",
+      ":test_extract_graphql_request",
+      ":test_extract_dataloader",
+      ":test_extract_graphql_tools",
+      ":test_extract_prisma",
+      ":test_extract_mongoose",
+      ":test_extract_sequelize",
+      ":test_extract_typeorm",
+      ":test_extract_knex",
+      ":test_extract_massive",
+      ":test_extract_pg",
+      ":test_extract_mysql2",
+      ":test_extract_sqlite3",
+      ":test_extract_redis",
+      ":test_extract_ioredis",
+      ":test_extract_mongodb",
+      ":test_extract_cassandra_driver",
+      ":test_extract_neo4j_driver",
+      ":test_extract_elastic_elasticsearch",
+      ":test_extract_memcached",
+      ":test_extract_node_cache",
+      ":test_extract_lru_cache",
+      ":test_extract_memory_cache",
+      ":test_extract_flat_cache",
+      ":test_extract_node_localstorage",
+      ":test_extract_localforage",
+      ":test_extract_dexie",
+      ":test_extract_lowdb",
+      ":test_extract_nedb",
+      ":test_extract_level",
+      ":test_extract_leveldown",
+      ":test_extract_levelup",
+      ":test_extract_aws_sdk",
+      ":test_extract_aws_sdk_client_s3",
+      ":test_extract_aws_sdk_client_dynamodb",
+      ":test_extract_aws_sdk_client_lambda",
+      ":test_extract_aws_sdk_client_ec2",
+      ":test_extract_aws_sdk_client_rds",
+      ":test_extract_aws_sdk_client_sns",
+      ":test_extract_aws_sdk_client_sqs",
+      ":test_extract_aws_sdk_client_ses",
+      ":test_extract_aws_sdk_client_cloudformation",
+      ":test_extract_aws_sdk_client_cloudwatch",
+      ":test_extract_google_cloud_storage",
+      ":test_extract_google_cloud_pubsub",
+      ":test_extract_google_cloud_firestore",
+      ":test_extract_google_cloud_bigquery",
+      ":test_extract_google_cloud_functions_framework",
+      ":test_extract_firebase_admin",
+      ":test_extract_firebase",
+      ":test_extract_azure_storage_blob",
+      ":test_extract_azure_cosmos",
+      ":test_extract_azure_service_bus",
+      ":test_extract_azure_functions",
+      ":test_extract_azure_identity",
+      ":test_extract_stripe",
+      ":test_extract_paypal_rest_sdk",
+      ":test_extract_braintree",
+      ":test_extract_square",
+      ":test_extract_razorpay",
+      ":test_extract_twilio",
+      ":test_extract_sendgrid",
+      ":test_extract_mailgun_js",
+      ":test_extract_nodemailer",
+      ":test_extract_email_templates",
+      ":test_extract_mjml",
+      ":test_extract_juice",
+      ":test_extract_handlebars",
+      ":test_extract_mustache",
+      ":test_extract_ejs",
+      ":test_extract_pug",
+      ":test_extract_nunjucks",
+      ":test_extract_twig",
+      ":test_extract_dot",
+      ":test_extract_dustjs_linkedin",
+      ":test_extract_eta",
   ],
   visibility = ["//visibility:public"],
 )
@@ -55,4 +471,3 @@ genrule(
   outs = ["total_file_count.txt"],
   cmd = "echo 'Total files across all extracts:' > $@ && find $(SRCS) -type f | wc -l >> $@",
 )
-
